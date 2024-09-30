@@ -1,24 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Flash CardVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FlashCardVC" customModule="FlashCardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QK3-dG-iiT">
+                                <rect key="frame" x="0.0" y="69" width="393" height="739"/>
+                                <subviews>
+                                    <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5s-EF-y45">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="39"/>
+                                        <color key="backgroundColor" red="0.4737295201934526" green="0.76871567964553833" blue="0.49362522855832003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Home Screen"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Home Screen">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDn-dP-rYo">
+                                        <rect key="frame" x="0.0" y="39" width="393" height="350"/>
+                                        <color key="backgroundColor" red="0.83144342548729433" green="0.53716455285452636" blue="0.94527951528116605" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350" id="e5y-f0-n1C"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Create FlashCards" image="plus.arrow.trianglehead.clockwise" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Create FlashCards +">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vg-eW-Csi">
+                                        <rect key="frame" x="0.0" y="389" width="393" height="350"/>
+                                        <color key="backgroundColor" red="0.40758035791157893" green="0.80641981755332093" blue="0.90711581829896903" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350" id="rP8-4F-7Wr"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Study Mode"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Study Mode">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NDn-dP-rYo" firstAttribute="centerX" secondItem="QK3-dG-iiT" secondAttribute="centerX" id="5l7-vs-j2C"/>
+                                    <constraint firstItem="I5s-EF-y45" firstAttribute="centerX" secondItem="QK3-dG-iiT" secondAttribute="centerX" id="6ot-92-ePt"/>
+                                    <constraint firstItem="7vg-eW-Csi" firstAttribute="centerX" secondItem="QK3-dG-iiT" secondAttribute="centerX" id="Y0L-Sd-JDg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QK3-dG-iiT" secondAttribute="trailing" id="8Qz-oD-Hwv"/>
+                            <constraint firstItem="QK3-dG-iiT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cr1-hi-xzO"/>
+                            <constraint firstItem="QK3-dG-iiT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eUM-p8-8rw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QK3-dG-iiT" secondAttribute="bottom" constant="10" id="n8l-tO-cp8"/>
+                            <constraint firstItem="QK3-dG-iiT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="nHs-GM-XfY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardStackView" destination="QK3-dG-iiT" id="aTL-o7-62S"/>
+                        <outlet property="createButton" destination="NDn-dP-rYo" id="Skv-Md-sMP"/>
+                        <outlet property="homeScreenButton" destination="I5s-EF-y45" id="2eJ-5Z-1mP"/>
+                        <outlet property="studyModeButton" destination="7vg-eW-Csi" id="7gz-Hk-ukX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="124" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus.arrow.trianglehead.clockwise" catalog="system" width="119" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
